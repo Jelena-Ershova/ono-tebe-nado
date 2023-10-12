@@ -12,14 +12,14 @@
   <body class="page">
     <header class="header" id="top">
       <nav class="header__menu">
-        <ul class="header__links-list">
-          <li class="header__links-list-item">
-            <a href="#top" class="header__link_active">главная</a>
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item">
+            <a href="#top" class="link_active">главная</a>
           </li>
-          <li class="header__links-list-item">
+          <li class="header__menu-list-item">
             <a href="#lots">посмотреть лоты</a>
           </li>
-          <li class="header__links-list-item">
+          <li class="header__menu-list-item">
             <a href="#about">об аукционе</a>
           </li>
         </ul>
@@ -30,28 +30,26 @@
           alt="Логотип - Оно тебе надо"
           class="header__logo-image"
       /></a>
-      <div class="header__address">
-        <address class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a><br />
-          <a href="mailto:info@sobaka.de">info@sobaka.ge</a>
-          <div class="address">
-            наб. Принсенграхт 263-265, <br />
-            Амстердам
-          </div>
-        </address>
-      </div>
+      <address class="address header__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.de">info@sobaka.ge</a>
+        <p class="address">
+          наб. Принсенграхт 263-265, <br />
+          Амстердам
+        </p>
+      </address>
     </header>
     <main>
       <section class="cover">
         <div class="overley">
           <h1 class="cover__title">
-            <span class="aligned-text"
+            <span class="cover__title-aligned-text word"
               >О<span class="letter-spacing-extended">но</span></span
             >
-            <span class="aligned-text_center"
+            <span class="cover__title-aligned-text_center word"
               >те<span class="letter-spacing-extended">бе</span></span
             >
-            <span class="aligned-text_right"
+            <span class="cover__title-aligned-text_right word"
               ><span class="letter-spacing-extended">н</span>ад<span
                 class="no-letter-spacing"
                 >о</span
@@ -69,13 +67,13 @@
       <section class="lots" id="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li>
-            <a class="card-link card_type_film">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link card_type_film">
               <div class="overley">
                 <article class="card_article">
-                  <h4 class="card__title">
+                  <h3 class="card__title">
                     Фильм режиссёра, который бросил киношколу
-                  </h4>
+                  </h3>
                   <p class="card__text">
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                     ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -85,14 +83,14 @@
               </div>
             </a>
           </li>
-          <li>
-            <a class="card-link card_type_book">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link card_type_book">
               <div class="overley">
                 <article class="card_article">
-                  <h4 class="card__title">
+                  <h3 class="card__title">
                     Книга, где описан один скучный день из жизни рекламного
                     агента
-                  </h4>
+                  </h3>
                   <p class="card__text">
                     Объёмом почти в тысячу страниц. Иногда без знаков препинания
                     и с переходами на древнеанглийский. В ней одновременно
@@ -105,13 +103,13 @@
               </div>
             </a>
           </li>
-          <li>
-            <a class="card-link card_type_picture">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link card_type_picture">
               <div class="overley">
                 <article class="card_article">
-                  <h4 class="card__title">
+                  <h3 class="card__title">
                     Картина, которую повторит даже 5-летний сын маминой подруги
-                  </h4>
+                  </h3>
                   <p class="card__text">
                     Ну действительно, там линия, тут кружочек, а здесь и вовсе
                     что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -123,7 +121,7 @@
             </a>
           </li>
         </ul>
-        <a class="lots__look-more-link">посмотреть больше</a>
+        <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about" id="about">
         <div class="about__logo">
@@ -136,14 +134,14 @@
         <div class="">
           <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
-            <p>
+            <p class="about__text-item">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p>
+            <p class="about__text-item">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -157,40 +155,44 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__address">
-        <address class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a><br />
-          <a href="mailto:info@sobaka.de">info@sobaka.ge</a>
-          <div class="address">
-            наб. Принсенграхт 263-265, <br />
-            Амстердам
-          </div>
-        </address>
-      </div>
+      <address class="address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.de">info@sobaka.ge</a>
+        <p class="address">
+          наб. Принсенграхт 263-265, <br />
+          Амстердам
+        </p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__links-list">
-          <li class="footer__links-list-item">
-            <a href="#top" class="header__link_active">главная</a>
+          <li>
+            <a href="#top" class="link_active">главная</a>
           </li>
-          <li class="footer__links-list-item">
+          <li>
             <a href="#lots">посмотреть лоты</a>
           </li>
-          <li class="footer__links-list-item">
+          <li>
             <a href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <div class="footer__social-list">
-        <a href="#" class="footer__social-link"
-          ><img src="./images/yt.svg" alt="Youtube"
-        /></a>
-        <a href="#" class="footer__social-link"
-          ><img src="./images/vk.svg" alt="ВКонтакте"
-        /></a>
-        <a href="#" class="footer__social-link"
-          ><img src="./images/pinterest.svg" alt="Pinterest"
-        /></a>
-      </div>
+      <ul class="footer__social-list">
+        <li>
+          <a href="#" class="footer__social-link"
+            ><img src="./images/yt.svg" alt="Youtube"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="footer__social-link"
+            ><img src="./images/vk.svg" alt="ВКонтакте"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="footer__social-link"
+            ><img src="./images/pinterest.svg" alt="Pinterest"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
