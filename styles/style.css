@@ -189,7 +189,7 @@ a {
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.card_article {
+.lots__card-link__article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
